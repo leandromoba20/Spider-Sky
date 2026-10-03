@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0d0f" />
+    <meta name="description" content="Conte-nos a sua ideia e solicite uma proposta personalizada à Spider Sky." />
+    <title>Solicitação de orçamento | Spider Sky</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/orcamento.css" />
+  </head>
+  <body class="quote-page">
+    <header class="site-header quote-header">
+      <div class="container">
+        <nav class="nav" aria-label="Navegação principal">
+          <a href="index.html" class="brand quote-brand" aria-label="Spider Sky — página inicial"><img src="images/logo/logo.jpeg" alt="Logo Spider Sky" class="brand-logo" /><span>Spider Sky</span></a>
+          <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="quote-nav"><span></span><span></span><span></span></button>
+          <div class="nav-menu" id="quote-nav">
+            <a href="index.html">Início</a><a href="servicos.html">Serviços</a><a href="projetos.html">Projetos</a><a href="sobre.html">Sobre nós</a><a class="btn btn-primary" href="index.html">Voltar ao site</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="quote-hero">
+        <div class="container quote-hero-inner">
+          <p class="eyebrow">Solicitação de orçamento</p>
+          <h1>Conte-nos a sua ideia.</h1>
+          <p>Preencha este formulário e conte-nos como gostaria que fosse o seu site. As suas respostas ajudarão a Spider Sky a compreender o projeto e preparar uma proposta adequada.</p>
+          <span class="time-estimate"><span aria-hidden="true"></span> Tempo estimado: 3–5 minutos</span>
+        </div>
+      </section>
+
+      <section class="quote-workspace" aria-label="Formulário de solicitação de orçamento">
+        <div class="container quote-layout">
+          <aside class="quote-sidebar" aria-label="Etapas do formulário">
+            <p class="sidebar-label">A sua solicitação</p>
+            <ol class="step-list" id="step-list">
+              <li><button type="button" data-go-step="0" aria-current="step"><span>01</span> Cliente</button></li>
+              <li><button type="button" data-go-step="1"><span>02</span> Projeto</button></li>
+              <li><button type="button" data-go-step="2"><span>03</span> Design</button></li>
+              <li><button type="button" data-go-step="3"><span>04</span> Funcionalidades</button></li>
+              <li><button type="button" data-go-step="4"><span>05</span> Conteúdo</button></li>
+              <li><button type="button" data-go-step="5"><span>06</span> Orçamento</button></li>
+              <li><button type="button" data-go-step="6"><span>07</span> Revisão</button></li>
+            </ol>
+            <div class="sidebar-note"><span class="note-mark">i</span><p>As informações não são armazenadas num banco de dados. São utilizadas apenas no navegador para gerar o seu pedido.</p></div>
+          </aside>
+
+          <div class="quote-card">
+            <div class="progress-area" aria-live="polite"><div class="progress-copy"><span id="progress-label">Etapa 1 de 7</span><span id="progress-percent">14%</span></div><div class="progress-track"><span id="progress-bar"></span></div><p class="mobile-step-label" id="mobile-step-label">Cliente</p></div>
+            <form id="quote-form" novalidate>
+              <input type="hidden" name="plano_comercial" />
+              <div class="form-error" id="form-error" role="alert" hidden></div>
+
+              <section class="form-step is-active" data-step="0" aria-labelledby="step-title-0">
+                <div class="step-heading"><span class="step-kicker">01 / CLIENTE</span><h2 id="step-title-0">Vamos começar por si.</h2><p>Como podemos entrar em contacto para conversar sobre a sua ideia?</p></div>
+                <div class="field-grid">
+                  <label class="field field-full"><span>Nome completo <i>*</i></span><input name="nome" autocomplete="name" placeholder="O seu nome e apelido" required maxlength="120" /></label>
+                  <label class="field field-full"><span>Nome da empresa ou negócio <small>Opcional</small></span><input name="empresa" autocomplete="organization" placeholder="Nome da empresa" maxlength="160" /></label>
+                  <label class="field"><span>WhatsApp / telefone <i>*</i></span><input name="telefone" autocomplete="tel" type="tel" placeholder="Ex.: +244 958 778 696" required maxlength="30" /></label>
+                  <label class="field"><span>E-mail</span><input name="email" autocomplete="email" type="email" placeholder="nome@empresa.com" maxlength="180" /></label>
+                  <label class="field"><span>Província</span><select name="provincia"><option value="">Selecione a província</option><option>Bengo</option><option>Benguela</option><option>Bié</option><option>Cabinda</option><option>Cuando</option><option>Cubango</option><option>Cuanza Norte</option><option>Cuanza Sul</option><option>Cunene</option><option>Huambo</option><option>Huíla</option><option>Luanda</option><option>Lunda Norte</option><option>Lunda Sul</option><option>Malanje</option><option>Moxico</option><option>Moxico Leste</option><option>Namibe</option><option>Uíge</option><option>Zaire</option><option>Outra</option></select></label>
+                  <label class="field"><span>Município</span><input name="municipio" placeholder="O seu município" maxlength="100" /></label>
+                  <fieldset class="field field-full"><legend>Como prefere ser contactado?</legend><div class="choice-row"><label class="choice"><input type="radio" name="contacto_preferido" value="WhatsApp" checked /><span>WhatsApp</span></label><label class="choice"><input type="radio" name="contacto_preferido" value="E-mail" /><span>E-mail</span></label><label class="choice"><input type="radio" name="contacto_preferido" value="Telefone" /><span>Telefone</span></label></div></fieldset>
+                </div>
+              </section>
+
+              <section class="form-step" data-step="1" aria-labelledby="step-title-1" hidden>
+                <div class="step-heading"><span class="step-kicker">02 / PROJETO</span><h2 id="step-title-1">O que pretende construir?</h2><p>Partilhe o essencial sobre a finalidade do seu site.</p></div>
+                <fieldset class="field field-full"><legend>Que tipo de site deseja? <i>*</i><small>Pode escolher várias opções</small></legend><div class="option-grid">
+                  <label class="option-card"><input type="checkbox" name="tipo_site[]" value="Site empresarial" /><span>Site empresarial</span></label><label class="option-card"><input type="checkbox" name="tipo_site[]" value="Site institucional" /><span>Site institucional</span></label><label class="option-card"><input type="checkbox" name="tipo_site[]" value="Loja online" /><span>Loja online</span></label><label class="option-card"><input type="checkbox" name="tipo_site[]" value="Portfólio" /><span>Portfólio</span></label><label class="option-card"><input type="checkbox" name="tipo_site[]" value="Blog" /><span>Blog</span></label><label class="option-card"><input type="checkbox" name="tipo_site[]" value="Landing Page" /><span>Landing page</span></label><label class="option-card"><input type="checkbox" name="tipo_site[]" value="Sistema web" /><span>Sistema web</span></label><label class="option-card"><input type="checkbox" name="tipo_site[]" value="Plataforma educacional" /><span>Plataforma educacional</span></label><label class="option-card"><input type="checkbox" name="tipo_site[]" value="Restaurante" /><span>Restaurante</span></label><label class="option-card"><input type="checkbox" name="tipo_site[]" value="Imobiliária" /><span>Imobiliária</span></label><label class="option-card"><input type="checkbox" name="tipo_site[]" value="Serviços" /><span>Serviços</span></label><label class="option-card"><input type="checkbox" name="tipo_site[]" value="Outro" /><span>Outro</span></label>
+                </div></fieldset>
+                <label class="field conditional-field field-full" data-show-when="tipo_site[]:Outro" hidden><span>Especifique o tipo de site <i>*</i></span><input name="tipo_site_outro" maxlength="120" placeholder="Qual tipo de site tem em mente?" /></label>
+                <div class="field-grid field-grid-spaced">
+                  <label class="field field-full"><span>Qual é o objetivo do site? <i>*</i></span><textarea name="objetivo" rows="4" required maxlength="3000" placeholder="Explique o que pretende alcançar com este site..."></textarea></label>
+                  <fieldset class="field field-full"><legend>Para quem será o site?</legend><div class="choice-row choice-wrap"><label class="choice"><input type="checkbox" name="publico_alvo[]" value="Clientes" /><span>Clientes</span></label><label class="choice"><input type="checkbox" name="publico_alvo[]" value="Empresas" /><span>Empresas</span></label><label class="choice"><input type="checkbox" name="publico_alvo[]" value="Estudantes" /><span>Estudantes</span></label><label class="choice"><input type="checkbox" name="publico_alvo[]" value="Público geral" /><span>Público geral</span></label><label class="choice"><input type="checkbox" name="publico_alvo[]" value="Funcionários" /><span>Funcionários</span></label><label class="choice"><input type="checkbox" name="publico_alvo[]" value="Alunos" /><span>Alunos</span></label><label class="choice"><input type="checkbox" name="publico_alvo[]" value="Outro" /><span>Outro</span></label></div></fieldset>
+                  <fieldset class="field"><legend>Já possui um site?</legend><div class="choice-row"><label class="choice"><input type="radio" name="tem_site" value="Sim" /><span>Sim</span></label><label class="choice"><input type="radio" name="tem_site" value="Não" checked /><span>Não</span></label></div></fieldset>
+                  <label class="field conditional-field" data-show-when="tem_site:Sim" hidden><span>URL do site atual</span><input name="site_atual" type="url" placeholder="https://" maxlength="500" /></label>
+                  <fieldset class="field"><legend>Possui domínio?</legend><select name="dominio"><option value="Não sei">Não sei</option><option>Sim</option><option>Não</option></select></fieldset>
+                  <fieldset class="field"><legend>Possui hospedagem?</legend><select name="hospedagem"><option value="Não sei">Não sei</option><option>Sim</option><option>Não</option></select></fieldset>
+                </div>
+              </section>
+
+              <section class="form-step" data-step="2" aria-labelledby="step-title-2" hidden>
+                <div class="step-heading"><span class="step-kicker">03 / DESIGN</span><h2 id="step-title-2">Vamos dar forma à sua ideia.</h2><p>Escolha referências visuais e conte-nos que ambiente quer criar.</p></div>
+                <fieldset class="field field-full"><legend>Que estilo deseja? <small>Pode selecionar vários</small></legend><div class="choice-row choice-wrap"><label class="choice"><input type="checkbox" name="estilo[]" value="Moderno" /><span>Moderno</span></label><label class="choice"><input type="checkbox" name="estilo[]" value="Minimalista" /><span>Minimalista</span></label><label class="choice"><input type="checkbox" name="estilo[]" value="Elegante" /><span>Elegante</span></label><label class="choice"><input type="checkbox" name="estilo[]" value="Corporativo" /><span>Corporativo</span></label><label class="choice"><input type="checkbox" name="estilo[]" value="Tecnológico" /><span>Tecnológico</span></label><label class="choice"><input type="checkbox" name="estilo[]" value="Luxuoso" /><span>Luxuoso</span></label><label class="choice"><input type="checkbox" name="estilo[]" value="Criativo" /><span>Criativo</span></label><label class="choice"><input type="checkbox" name="estilo[]" value="Jovem" /><span>Jovem</span></label><label class="choice"><input type="checkbox" name="estilo[]" value="Simples" /><span>Simples</span></label><label class="choice"><input type="checkbox" name="estilo[]" value="Outro" /><span>Outro</span></label></div></fieldset>
+                <div class="field-grid field-grid-spaced">
+                  <fieldset class="field field-full"><legend>Quais cores deseja utilizar? <small>Escolha até 4 e, se preferir, edite o HEX</small></legend><div class="color-picker-row" id="color-picker-row"><label class="color-input"><input type="color" name="cores[]" value="#2A0052" aria-label="Cor 1" /><input type="text" value="#2A0052" pattern="^#[0-9A-Fa-f]{6}$" maxlength="7" aria-label="Código HEX cor 1" /></label><label class="color-input"><input type="color" name="cores[]" value="#1769E0" aria-label="Cor 2" /><input type="text" value="#1769E0" pattern="^#[0-9A-Fa-f]{6}$" maxlength="7" aria-label="Código HEX cor 2" /></label><label class="color-input"><input type="color" name="cores[]" value="#102A43" aria-label="Cor 3" /><input type="text" value="#102A43" pattern="^#[0-9A-Fa-f]{6}$" maxlength="7" aria-label="Código HEX cor 3" /></label><label class="color-input"><input type="color" name="cores[]" value="#25A56A" aria-label="Cor 4" /><input type="text" value="#25A56A" pattern="^#[0-9A-Fa-f]{6}$" maxlength="7" aria-label="Código HEX cor 4" /></label></div><div class="color-suggestions" aria-label="Sugestões de cor"><button type="button" data-color="#2A0052" style="--swatch:#2A0052" aria-label="Roxo"></button><button type="button" data-color="#1769E0" style="--swatch:#1769E0" aria-label="Azul"></button><button type="button" data-color="#102A43" style="--swatch:#102A43" aria-label="Azul escuro"></button><button type="button" data-color="#25A56A" style="--swatch:#25A56A" aria-label="Verde"></button><button type="button" data-color="#E5A629" style="--swatch:#E5A629" aria-label="Dourado"></button><button type="button" data-color="#F2F4F7" style="--swatch:#F2F4F7" aria-label="Cinza claro"></button><span>Selecione um seletor e depois uma sugestão</span></div></fieldset>
+                  <label class="field field-full"><span>Existem cores que não quer utilizar?</span><input name="cores_evitar" maxlength="200" placeholder="Ex.: não quero utilizar vermelho" /></label>
+                  <fieldset class="field field-full"><legend>Tema do site</legend><div class="choice-row choice-wrap"><label class="choice"><input type="radio" name="fundo" value="Claro" /><span>Claro</span></label><label class="choice"><input type="radio" name="fundo" value="Escuro" /><span>Escuro</span></label><label class="choice"><input type="radio" name="fundo" value="Claro + escuro" /><span>Claro + escuro</span></label><label class="choice"><input type="radio" name="fundo" value="Sem preferência" checked /><span>Sem preferência</span></label></div></fieldset>
+                  <fieldset class="field field-full"><legend>Sites de referência <small>Até 3 URLs; são opcionais</small></legend><div class="url-list"><input name="referencias[]" type="url" placeholder="https://exemplo.com" maxlength="500" /><input name="referencias[]" type="url" placeholder="https://outro-exemplo.com" maxlength="500" /><input name="referencias[]" type="url" placeholder="https://mais-uma-referencia.com" maxlength="500" /></div></fieldset>
+                  <label class="field field-full"><span>Como imagina visualmente o site?</span><textarea name="descricao_visual" rows="5" maxlength="3000" placeholder="Ex.: Quero um site moderno, com fundo escuro, detalhes em azul, animações suaves e imagens grandes..."></textarea></label>
+                </div>
+              </section>
+
+              <section class="form-step" data-step="3" aria-labelledby="step-title-3" hidden>
+                <div class="step-heading"><span class="step-kicker">04 / FUNCIONALIDADES</span><h2 id="step-title-3">O que o site precisa de fazer?</h2><p>Selecione as funcionalidades desejadas. A base de dados, se escolhida, é uma necessidade do seu projeto, não deste formulário.</p></div>
+                <fieldset class="field field-full"><legend>Funcionalidades <small>Selecione todas as que se aplicam</small></legend><div class="option-grid feature-grid">
+                  <label class="option-card"><input type="checkbox" name="funcionalidades[]" value="Formulário de contacto" /><span>Formulário de contacto</span></label><label class="option-card"><input type="checkbox" name="funcionalidades[]" value="WhatsApp" /><span>WhatsApp</span></label><label class="option-card"><input type="checkbox" name="funcionalidades[]" value="Galeria" /><span>Galeria</span></label><label class="option-card"><input type="checkbox" name="funcionalidades[]" value="Vídeos" /><span>Vídeos</span></label><label class="option-card"><input type="checkbox" name="funcionalidades[]" value="Blog" /><span>Blog</span></label><label class="option-card"><input type="checkbox" name="funcionalidades[]" value="Login" /><span>Login</span></label><label class="option-card"><input type="checkbox" name="funcionalidades[]" value="Área de clientes" /><span>Área de clientes</span></label><label class="option-card"><input type="checkbox" name="funcionalidades[]" value="Painel administrativo" /><span>Painel administrativo</span></label><label class="option-card"><input type="checkbox" name="funcionalidades[]" value="Pagamentos" /><span>Pagamentos</span></label><label class="option-card"><input type="checkbox" name="funcionalidades[]" value="Loja online" /><span>Loja online</span></label><label class="option-card"><input type="checkbox" name="funcionalidades[]" value="Carrinho" /><span>Carrinho</span></label><label class="option-card"><input type="checkbox" name="funcionalidades[]" value="Reservas" /><span>Reservas</span></label><label class="option-card"><input type="checkbox" name="funcionalidades[]" value="Agendamento" /><span>Agendamento</span></label><label class="option-card"><input type="checkbox" name="funcionalidades[]" value="Google Maps" /><span>Google Maps</span></label><label class="option-card"><input type="checkbox" name="funcionalidades[]" value="Redes sociais" /><span>Redes sociais</span></label><label class="option-card"><input type="checkbox" name="funcionalidades[]" value="Chat" /><span>Chat</span></label><label class="option-card"><input type="checkbox" name="funcionalidades[]" value="Pesquisa" /><span>Pesquisa</span></label><label class="option-card"><input type="checkbox" name="funcionalidades[]" value="Avaliações" /><span>Avaliações</span></label><label class="option-card"><input type="checkbox" name="funcionalidades[]" value="Newsletter" /><span>Newsletter</span></label><label class="option-card"><input type="checkbox" name="funcionalidades[]" value="SEO" /><span>SEO</span></label><label class="option-card"><input type="checkbox" name="funcionalidades[]" value="Google Analytics" /><span>Google Analytics</span></label><label class="option-card"><input type="checkbox" name="funcionalidades[]" value="Sistema de documentos" /><span>Documentos</span></label><label class="option-card"><input type="checkbox" name="funcionalidades[]" value="Integrações" /><span>Integrações</span></label><label class="option-card"><input type="checkbox" name="funcionalidades[]" value="Base de dados" /><span>Base de dados</span></label><label class="option-card"><input type="checkbox" name="funcionalidades[]" value="Outro" /><span>Outro</span></label>
+                </div></fieldset>
+                <label class="field conditional-field field-full field-grid-spaced" data-show-when="funcionalidades[]:Outro" hidden><span>Especifique a funcionalidade <i>*</i></span><input name="funcionalidade_outro" maxlength="500" placeholder="Que outra funcionalidade precisa?" /></label>
+              </section>
+
+              <section class="form-step" data-step="4" aria-labelledby="step-title-4" hidden>
+                <div class="step-heading"><span class="step-kicker">05 / CONTEÚDO</span><h2 id="step-title-4">O conteúdo também conta.</h2><p>Conte-nos o que já está preparado e em que podemos apoiar.</p></div>
+                <div class="field-grid">
+                  <fieldset class="field field-full"><legend>Já possui o conteúdo do site?</legend><div class="choice-row choice-wrap"><label class="choice"><input type="radio" name="conteudo" value="Sim" /><span>Sim</span></label><label class="choice"><input type="radio" name="conteudo" value="Parcialmente" checked /><span>Parcialmente</span></label><label class="choice"><input type="radio" name="conteudo" value="Não" /><span>Não</span></label></div></fieldset>
+                  <fieldset class="field"><legend>Possui logotipo?</legend><div class="choice-row"><label class="choice"><input type="radio" name="logotipo" value="Sim" /><span>Sim</span></label><label class="choice"><input type="radio" name="logotipo" value="Não" checked /><span>Não</span></label></div></fieldset>
+                  <fieldset class="field"><legend>Possui imagens?</legend><div class="choice-row"><label class="choice"><input type="radio" name="fotos" value="Sim" /><span>Sim</span></label><label class="choice"><input type="radio" name="fotos" value="Não" /><span>Não</span></label><label class="choice"><input type="radio" name="fotos" value="Algumas" checked /><span>Algumas</span></label></div></fieldset>
+                  <fieldset class="field field-full"><legend>Precisa de ajuda para criar conteúdo?</legend><div class="choice-row"><label class="choice"><input type="radio" name="ajuda_conteudo" value="Sim" /><span>Sim</span></label><label class="choice"><input type="radio" name="ajuda_conteudo" value="Não" /><span>Não</span></label><label class="choice"><input type="radio" name="ajuda_conteudo" value="Talvez" checked /><span>Talvez</span></label></div></fieldset>
+                  <fieldset class="field field-full"><legend>Quais páginas deseja?</legend><div class="choice-row choice-wrap"><label class="choice"><input type="checkbox" name="paginas[]" value="Início" /><span>Início</span></label><label class="choice"><input type="checkbox" name="paginas[]" value="Sobre" /><span>Sobre</span></label><label class="choice"><input type="checkbox" name="paginas[]" value="Serviços" /><span>Serviços</span></label><label class="choice"><input type="checkbox" name="paginas[]" value="Produtos" /><span>Produtos</span></label><label class="choice"><input type="checkbox" name="paginas[]" value="Projetos" /><span>Projetos</span></label><label class="choice"><input type="checkbox" name="paginas[]" value="Portfólio" /><span>Portfólio</span></label><label class="choice"><input type="checkbox" name="paginas[]" value="Contactos" /><span>Contactos</span></label><label class="choice"><input type="checkbox" name="paginas[]" value="Blog" /><span>Blog</span></label><label class="choice"><input type="checkbox" name="paginas[]" value="FAQ" /><span>FAQ</span></label><label class="choice"><input type="checkbox" name="paginas[]" value="Equipa" /><span>Equipa</span></label><label class="choice"><input type="checkbox" name="paginas[]" value="Preços" /><span>Preços</span></label><label class="choice"><input type="checkbox" name="paginas[]" value="Depoimentos" /><span>Depoimentos</span></label><label class="choice"><input type="checkbox" name="paginas[]" value="Outra" /><span>Outra</span></label></div></fieldset>
+                  <label class="field conditional-field field-full" data-show-when="paginas[]:Outra" hidden><span>Qual outra página deseja?</span><input name="pagina_outra" maxlength="160" placeholder="Nome da página" /></label>
+                </div>
+              </section>
+
+              <section class="form-step" data-step="5" aria-labelledby="step-title-5" hidden>
+                <div class="step-heading"><span class="step-kicker">06 / PRAZO E ORÇAMENTO</span><h2 id="step-title-5">Qual é o horizonte do projeto?</h2><p>O valor é opcional: ajuda-nos a adequar a proposta à sua realidade.</p></div>
+                <div class="field-grid">
+                  <fieldset class="field field-full"><legend>Quando deseja o projeto?</legend><div class="choice-row choice-wrap"><label class="choice"><input type="radio" name="prazo" value="O mais rápido possível" /><span>O mais rápido possível</span></label><label class="choice"><input type="radio" name="prazo" value="1 semana" /><span>1 semana</span></label><label class="choice"><input type="radio" name="prazo" value="2 semanas" /><span>2 semanas</span></label><label class="choice"><input type="radio" name="prazo" value="1 mês" checked /><span>1 mês</span></label><label class="choice"><input type="radio" name="prazo" value="2–3 meses" /><span>2–3 meses</span></label><label class="choice"><input type="radio" name="prazo" value="Sem prazo definido" /><span>Sem prazo definido</span></label></div></fieldset>
+                  <fieldset class="field field-full"><legend>Qual é a faixa de orçamento? <small>Opcional</small></legend><div class="choice-row choice-wrap"><label class="choice"><input type="radio" name="orcamento" value="Ainda não sei" checked /><span>Ainda não sei</span></label><label class="choice"><input type="radio" name="orcamento" value="Até 50.000 Kz" /><span>Até 50.000 Kz</span></label><label class="choice"><input type="radio" name="orcamento" value="50.000–100.000 Kz" /><span>50.000–100.000 Kz</span></label><label class="choice"><input type="radio" name="orcamento" value="100.000–250.000 Kz" /><span>100.000–250.000 Kz</span></label><label class="choice"><input type="radio" name="orcamento" value="250.000–500.000 Kz" /><span>250.000–500.000 Kz</span></label><label class="choice"><input type="radio" name="orcamento" value="Mais de 500.000 Kz" /><span>Mais de 500.000 Kz</span></label><label class="choice"><input type="radio" name="orcamento" value="Prefiro receber uma proposta" /><span>Prefiro receber uma proposta</span></label></div></fieldset>
+                  <label class="field field-full"><span>Informações adicionais</span><textarea name="observacoes" rows="4" maxlength="3000" placeholder="Partilhe qualquer detalhe importante que ainda não mencionou..."></textarea></label>
+                </div>
+              </section>
+
+              <section class="form-step" data-step="6" aria-labelledby="step-title-6" hidden>
+                <div class="step-heading"><span class="step-kicker">07 / REVISÃO</span><h2 id="step-title-6">Revise a sua solicitação.</h2><p>Confira as respostas antes de gerar o PDF. Pode voltar e editar qualquer etapa.</p></div>
+                <button class="text-button edit-answers" type="button" id="edit-answers">← Editar respostas</button>
+                <div class="summary-grid" id="summary-grid"></div>
+                <section class="success-panel" id="success-panel" hidden aria-live="polite">
+                  <div class="success-mark" aria-hidden="true">✓</div>
+                  <p class="step-kicker">DOCUMENTO GERADO</p>
+                  <h2>Seu projeto está quase pronto!</h2>
+                  <p class="success-intro">Recebemos todas as informações sobre o site que você deseja criar e preparamos o seu pedido em PDF.</p>
+                  <p class="request-code">ID: <strong id="success-code"></strong></p>
+                  <p class="send-feedback" id="share-feedback" role="status" hidden></p>
+                  <div class="share-instructions">
+                    <h3>Agora, envie este PDF para a Spider Sky</h3>
+                    <p>O PDF contém os detalhes que você forneceu sobre o seu projeto, incluindo estilo, cores, funcionalidades, objetivo e outras preferências.</p>
+                    <p>Envie o PDF para nós pelo WhatsApp ou pelo seu aplicativo de e-mail. A nossa equipa analisará a sua ideia e compreenderá como deseja que seja o seu site.</p>
+                    <ol><li><span>1</span><strong>Clique em “Partilhar orçamento”</strong></li><li><span>2</span><strong>Escolha WhatsApp ou E-mail</strong></li><li><span>3</span><strong>Selecione a Spider Sky</strong></li><li><span>4</span><strong>Envie o PDF</strong></li></ol>
+                    <p class="share-closing">Depois de recebermos o documento, analisaremos as informações e entraremos em contacto consigo para conversar sobre o projeto e o orçamento.</p>
+                  </div>
+                  <p class="pdf-ready" id="pdf-ready" role="status">O PDF foi gerado com sucesso.</p>
+                  <div class="result-actions share-actions"><button class="btn btn-primary share-primary" type="button" id="share-quote">📤 Partilhar orçamento com a Spider Sky</button><button class="btn btn-secondary" type="button" id="view-pdf">📄 Ver PDF</button><button class="btn btn-secondary" type="button" id="download-pdf">⬇ Baixar PDF</button></div>
+                  <div class="share-fallback" id="share-fallback" hidden>
+                    <h3>O seu navegador não suporta a partilha direta deste PDF.</h3>
+                    <p>Não se preocupe. O seu PDF já foi criado. Baixe o arquivo e envie-o para a Spider Sky pelo WhatsApp ou e-mail. Depois de abrir a conversa, anexe o PDF manualmente.</p>
+                    <div class="result-actions"><button class="btn btn-primary" type="button" id="fallback-download">Baixar PDF</button><button class="btn btn-secondary" type="button" id="open-whatsapp">Abrir WhatsApp</button><button class="btn btn-secondary" type="button" id="open-email">Abrir E-mail</button></div>
+                  </div>
+                  <p class="attachment-note">A partilha abre o menu nativo do dispositivo. Escolha uma aplicação e confirme o envio; o site não pode selecionar um contacto nem enviar o ficheiro sem a sua confirmação.</p>
+                  <a class="btn btn-secondary return-home" href="index.html">Voltar ao site</a>
+                </section>
+              </section>
+
+              <div class="form-actions" id="form-actions"><button class="btn btn-secondary" type="button" id="back-button" disabled>Voltar</button><button class="btn btn-primary" type="button" id="continue-button">Continuar <span aria-hidden="true">→</span></button></div>
+              <p class="privacy-copy" id="privacy-copy">As informações preenchidas neste formulário não são armazenadas num banco de dados. São utilizadas apenas para gerar a sua solicitação de orçamento. <a href="politica-de-privacidade.html">Política de Privacidade</a>.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+    <script src="js/orcamento.js" defer></script>
+  </body>
+</html>
